@@ -1,0 +1,2 @@
+include ':app', ':app-connect'
+rootProject.name='XLoad Support Library Example'
