@@ -4,12 +4,12 @@
 ## Download
 Download all support library
 ```
-implementation 'com.github.XLDTechLabs:XLoadSupportLibrary:0.1.0'
+implementation 'com.github.XLDTechLabs:xload-support-library:0.1.0'
 ```
 
 Libraries
 ```
-implementation 'com.github.XLDTechLabs:XLoadSupportLibrary:app_connect:0.1.0'
+implementation 'com.github.XLDTechLabs:xload-support-library:app_connect:0.1.0'
 ```
 
 ## XLD Connection Library
