@@ -4,16 +4,17 @@
 ## Download
 Download all support library
 ```
-Todo dependency here
+implementation 'com.github.XLDTechLabs:XLoadSupportLibrary:0.1.0'
 ```
 
 Libraries
 ```
-Todo chunks depedencies
+implementation 'com.github.XLDTechLabs:XLoadSupportLibrary:app_connect:0.1.0'
 ```
 
 ## XLD Connection Library
 > XLDConnect library is a very light library to get a `key` from xload app that will allow you to retrieve user.
+
 
 ##### Document
 ```
@@ -41,10 +42,20 @@ XLDConnect.getKey(Context context, boolean isDevelopment, XLDConnect.OnXLoadConn
 
 ##### Download:
 ```
-dependency download implementation
+implementation 'com.github.XLDTechLabs:XLoadSupportLibrary:app_connect:0.1.0'
 ```
 
 ##### Integration Guide:
+
+Add it in your root build.gradle at the end of repositories:*
+```gradle
+allprojects {
+     repositories {
+          ...
+	  maven { url 'https://jitpack.io' }
+     }
+}
+```
 
 Add to Android Manifest*
 ```AndroidManifest.xml
