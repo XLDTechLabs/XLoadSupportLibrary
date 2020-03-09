@@ -39,7 +39,7 @@ public class XLDConnect {
 
         if (!hasReadPermission(activity)) {
             listener.onXLoadConnectionError(Error.NO_READ_PERMISSION);
-        } else if (isXLoadAppInstall(activity, isDevelopment)) {
+        } else if (!isXLoadAppInstall(activity, isDevelopment)) {
             listener.onXLoadConnectionError(Error.XLOAD_NOT_INSTALL);
         } else {
             File folder = new File(Environment.getExternalStorageDirectory(), Constants.FOLDER_NAME);
@@ -91,7 +91,7 @@ public class XLDConnect {
     }
 
     private static boolean isXLoadDevInstall(Context context) {
-        return isPackageInstalled(Constants.XLD_PRODUCTION_PACKAGE, context.getPackageManager());
+        return isPackageInstalled(Constants.XLD_DEVELOPMENT_PACKAGE, context.getPackageManager());
     }
 
     private static boolean isPackageInstalled(String packageName, PackageManager packageManager) {

@@ -1,2 +1,2 @@
-include ':app', ':app-connect'
+include ':app', ':app-connect', ':app-connect-ktx'
 rootProject.name='XLoad Support Library Example'
