@@ -49,6 +49,8 @@ class XLDConnectKtx {
                         Log.d(TAG, "Error ${error.message}")
                         listener.onXLoadConnectionError(Error.UNKNOWN_ERROR)
                     }
+                } else {
+                    listener.onXLoadConnectionError(Error.XLOAD_APP_NOT_LOGIN)
                 }
             }
         }
